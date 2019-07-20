@@ -1,0 +1,20 @@
+{% extends "basic_app/base.html" %}
+{% load static %}
+<div>
+{% block body_block %}
+  {% if value > 1 %}
+    <h3>Invalid Credential!, Check Again</h3>
+  {% else %}
+  <style>
+    .a{
+      color : white;
+      text-align: center;
+    }
+  </style>
+  <div class="a">
+  <h2>Django Level Five</h2>
+  <h3>This is index Page</h3>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
